@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>    
+    <definition name="authen" template="/layout/authen-layout.jsp">
+        <put-attribute name="css" value="/include/css.jsp" />
+        <put-attribute name="footer" value="/include/footer.jsp" />
+        <put-attribute name="menu" value="/include/menu.jsp" />
+    </definition>
+    
+    <definition name="unauthen" template="/layout/unauthen-layout.jsp">
+        <put-attribute name="css" value="/include/css.jsp" />
+        <put-attribute name="footer" value="/include/footer.jsp" /> 
+    </definition>
+    
+    <definition name="login" extends="unauthen">  
+        <put-attribute name="body" value="/login.jsp" />
+    </definition>
+    
+    <definition name="index" extends="authen">  
+        <put-attribute name="body" value="/index.jsp" />
+    </definition>
+    <definition name="" extends="authen">  
+        <put-attribute name="body" value="/index.jsp" />
+    </definition>
+    <!-- Account -->
+    <definition name="account" extends="authen">  
+        <put-attribute name="body" value="/account/list.jsp" />
+    </definition>
+    <definition name="account-recycle" extends="authen">  
+        <put-attribute name="body" value="/account/recycle.jsp" />
+    </definition>
+    <definition name="account-add" extends="authen">  
+        <put-attribute name="body" value="/account/add.jsp" />
+    </definition>
+    <definition name="account-edit" extends="authen">  
+        <put-attribute name="body" value="/account/edit.jsp" />
+    </definition>
+    
+    <!--Log user_action-->
+    <definition name="user-action" extends="authen">  
+        <put-attribute name="body" value="/user-action/user-action-list.jsp"/>
+    </definition>
+    
+</tiles-definitions>
