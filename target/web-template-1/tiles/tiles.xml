@@ -17,10 +17,7 @@
     </definition>
     
     <definition name="index" extends="authen">  
-        <put-attribute name="body" value="/index.jsp" />
-    </definition>
-    <definition name="" extends="authen">  
-        <put-attribute name="body" value="/index.jsp" />
+        <put-attribute name="body" value="/home.jsp" />
     </definition>
     <!-- Account -->
     <definition name="account" extends="authen">  
